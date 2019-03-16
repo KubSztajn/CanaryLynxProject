@@ -112,6 +112,8 @@ body {
     padding: 20px;
     overflow: hidden;
     color: rgb(205, 207, 54);
+    text-shadow: -0.7px 0 black, 0 0.7px black, 0.7px 0 black, 0 -0.7px black; 
+
       
   }
   
@@ -129,14 +131,16 @@ body {
  
   fieldset {
     border-radius:8px;
-    border: 1px solid rgb(75, 75, 75);
-    box-shadow:0 0 10px #999;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow:  10px 10px rgb(139, 139, 139);
     background:rgb(153, 153, 153);
+    
   }
 
   .article-button {
   background-color: rgb(205, 207, 54); 
-  border: none;
+  border: solid rgb(68, 68, 68) 1px;
+  border-radius: 20px;
   color: white;
   padding: 16px 32px;
   text-align: center;
@@ -148,10 +152,12 @@ body {
   transition-duration: 0.4s;
   cursor: pointer;
   float: right;
+  
   }
   
   .article-button:hover {
     background-color: rgb(255, 249, 158); 
+    color: black;
   }
 
   footer {
@@ -173,6 +179,7 @@ body {
     content: "\00a0"; 
 }
 
+
 @media(max-width: 1000px) {
     .nav-text {
         display: none;
@@ -188,11 +195,21 @@ body {
     .article-img {
       margin-top: 105px;
     }
+
+
+    hr.style-five {
+      width: 50%;
+    }
+
 }
 
 @media(max-width: 1280px) {
   .article-img {
     margin-top: 45px;
+  }
+
+  hr.style-five {
+    width: 30%;
   }
 }
 
@@ -249,6 +266,23 @@ body {
       margin-left: auto;
       margin-right: auto;
     }
+
+    
+    .article-button {
+      float:none;
+      display: block;
+      text-decoration: underline;
+      text-decoration-color: rgb(205, 207, 54);
+      margin: auto;
+
+    }
+
+    .article-button:hover {
+      text-decoration-color: rgb(255, 249, 158);
+
+    }
+
+
 }
 
 
